@@ -11,6 +11,9 @@ body {
 	@include BodyCopy;
     background: $greyLightest;
 }
+body {
+    margin: 0;
+}
 a {
     color: $linkColor;
 }

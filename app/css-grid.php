@@ -25,16 +25,20 @@
                 <p>
                     <a href="https://css-tricks.com/snippets/css/complete-guide-grid/#prop-display">CSS Tricks: css-grid</a>
                 </p>
+                <p>
+                    <a href="holy-grail-grid.php">Holy Grail CSS Grid</a>
+                </p>
                 <div class="css-grid css-grid--col-3">
-                    <div class="css-grid--col">1</div>
+                    <div class="css-grid--col">1
+                    <p>xx</p><p>xx</p><p>xx</p><p>xx</p><p>xx</p><p>xx</p><p>xx</p>
+                    </div>
                     <div class="css-grid--col">2</div>
                     <div class="css-grid--col">3</div>
-                    <div class="css-grid--col">4</div>
                 </div>
             </section>
-            <section>
-                <div class="wrapper">
-                    <div class="grid">
+            <!-- <section>
+                
+                    <div class="css-grid">
                         <div class="grid__item grid__item--heading">
                             <h2>Heading</h2>
                         </div>
@@ -45,8 +49,8 @@
                             <p>Lorem ipsum</p>
                         </div>
                     </div>
-                </div>
-            </section>
+               
+            </section> -->
         </article> 
         <?php include("inc/foot.inc.php"); ?>   
     </main> 

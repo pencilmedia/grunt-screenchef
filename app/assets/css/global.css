@@ -7,37 +7,25 @@
 /* Typography */
 /* BEGIN: _grid.scss
 // -----------------------------------------------------*/
+@supports (--css: variables) {
+  :root {
+    --col: 1fr;
+    --gutter: 10px; } }
+
 .css-grid {
   border: 1px solid red;
-  background: #cecece;
-  display: grid; }
+  margin-bottom: 40px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr repeat(12, var(--col)) 1fr;
+  grid-template-rows: minmax(100%, 100%);
+  grid-gap: var(--gutter);
+  width: 100vw;
+  height: 100vh; }
   .css-grid * {
     border: 1px solid red; }
   .css-grid.css-grid--col-3 {
-    grid-template-columns: 33.3% 33.3% 33.3%; }
-  .css-grid .css-grid--col {
-    background: white; }
-
-@supports (--css: variables) {
-  :root {
-    --wrapper: 90%;
-    --col: 1fr;
-    --gutter: 20px; } }
-
-.wrapper {
-  border: 2px solid grey;
-  max-width: var(--wrapper);
-  margin: 20px auto; }
-
-.grid {
-  display: grid;
-  padding: var(--gutter);
-  grid-template-columns: 1fr repeat(12, var(--col)) 1fr;
-  grid-template-rows: repeat(2, minmax(150px, auto));
-  grid-gap: var(--gutter);
-  border: 1px solid grey;
-  background: white;
-  width: auto; }
+    grid-template-columns: var(--col) var(--col) var(--col); }
 
 .grid__item {
   border: 1px solid blue; }
@@ -54,12 +42,46 @@
   grid-column: 11 / 14;
   grid-row: 1 / span 2; }
 
+.hg__header {
+  grid-area: header; }
+
+.hg__footer {
+  grid-area: footer; }
+
+.hg__main {
+  grid-area: main; }
+
+.hg__left {
+  grid-area: navigation; }
+
+.hg__right {
+  grid-area: ads; }
+
+.hg {
+  outline: 1px solid black;
+  display: grid;
+  grid-template-areas: "header header header" "navigation main ads" "footer footer footer";
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-rows: 100px 1fr 30px;
+  min-height: 100vh; }
+  .hg [class^="hg_"] {
+    outline: 1px solid red; }
+
+@media screen and (max-width: 600px) {
+  .hg {
+    grid-template-areas: "header" "navigation" "main" "ads" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 50px 1fr 50px 30px; } }
+
 html,
 body {
   color: #333;
   font-family: "Inconsolata", Helvetica, sans-serif;
   font-weight: normal;
   background: #f2f2f2; }
+
+body {
+  margin: 0; }
 
 a {
   color: #c06000; }

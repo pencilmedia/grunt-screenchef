@@ -2,21 +2,22 @@
 // -----------------------------------------------------*/
 
 /* COLORS */
-$greyBase:      #ccc;
-$greyLightest:  lighten($greyBase, 15%);
-$greyLighter:   lighten($greyBase, 10%);
-$greyLight:     lighten($greyBase, 5%);
-$grey:          $greyBase;
-$greyDark:  darken($greyBase, 5%);
-$greyDarker:  darken($greyBase, 10%);
-$greyDarkest:  darken($greyBase, 20%);
+$greyBase:      	#ccc;
+$greyLightest:  	lighten($greyBase, 15%);
+$greyLighter:   	lighten($greyBase, 10%);
+$greyLight:     	lighten($greyBase, 5%);
+$grey:          	$greyBase;
+$greyDark:  		darken($greyBase, 5%);
+$greyDarker:  		darken($greyBase, 10%);
+$greyDarkest:  	darken($greyBase, 20%);
 
-$blackBase:      #000;
-$blackLightest:  lighten($blackBase, 90%);
-$blackLighter:   lighten($blackBase, 60%);
-$blackLight:     lighten($blackBase, 30%);
-$black:          $blackBase;
+$blackBase:      	#000;
+$blackLightest:  	lighten($blackBase, 90%);
+$blackLighter:   	lighten($blackBase, 60%);
+$blackLight:     	lighten($blackBase, 30%);
+$black:          	$blackBase;
 
+$white: 			#fff;
 
 /* Common */
 $copyColor: #333;
