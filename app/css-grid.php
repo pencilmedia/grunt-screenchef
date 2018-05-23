@@ -21,30 +21,16 @@
     <?php //include("inc/nav.inc.php"); ?>
         <article>
             <section>
-                <h1>Screenchef</h1>
-                <h2>Color Palette</h2>
-                <h6>Black</h6>
-                <div class="box-color black"></div>
-                <div class="box-color black-light"></div>
-                <div class="box-color black-lighter"></div>
-                <div class="box-color black-lightest"></div>
-                <h6>Grey</h6>
-                <div class="box-color grey-darkest"></div>
-                <div class="box-color grey-darker"></div>
-                <div class="box-color grey-dark"></div>
-                <div class="box-color grey"></div>
-                <div class="box-color grey-light"></div>
-                <div class="box-color grey-lighter"></div>
-                <div class="box-color grey-lightest"></div>
-            </section>
-            <section>
-                <h2>Exploration</h2>
+                <h1>CSS Grid</h1>
                 <p>
-                    <a href="css-variables.php">CSS Variables</a>
+                    <a href="https://css-tricks.com/snippets/css/complete-guide-grid/#prop-display">CSS Tricks: css-grid</a>
                 </p>
-                <p>
-                    <a href="css-grid.php">CSS Grid</a>
-                </p>
+                <div class="css-grid css-grid--col-3">
+                    <div class="css-grid--col">1</div>
+                    <div class="css-grid--col">2</div>
+                    <div class="css-grid--col">3</div>
+                    <div class="css-grid--col">4</div>
+                </div>
             </section>
         </article> 
         <?php include("inc/foot.inc.php"); ?>   

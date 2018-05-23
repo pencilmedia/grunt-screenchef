@@ -1,0 +1,18 @@
+/* BEGIN: _grid.scss
+// -----------------------------------------------------*/
+
+.css-grid {
+    border:1px solid red;
+    background: #cecece;
+    * {
+        border: 1px solid red;
+    }
+    // set grid
+    display: grid;
+    &.css-grid--col-3 {
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+    .css-grid--col {
+        background: white;
+    }
+}
