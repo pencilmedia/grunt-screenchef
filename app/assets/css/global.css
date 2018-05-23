@@ -18,6 +18,42 @@
   .css-grid .css-grid--col {
     background: white; }
 
+@supports (--css: variables) {
+  :root {
+    --wrapper: 90%;
+    --col: 1fr;
+    --gutter: 20px; } }
+
+.wrapper {
+  border: 2px solid grey;
+  max-width: var(--wrapper);
+  margin: 20px auto; }
+
+.grid {
+  display: grid;
+  padding: var(--gutter);
+  grid-template-columns: 1fr repeat(12, var(--col)) 1fr;
+  grid-template-rows: repeat(2, minmax(150px, auto));
+  grid-gap: var(--gutter);
+  border: 1px solid grey;
+  background: white;
+  width: auto; }
+
+.grid__item {
+  border: 1px solid blue; }
+
+.grid__item--heading {
+  grid-column: 2 / 11; }
+
+.grid__item--body {
+  grid-column: 2 / 8;
+  grid-row: 2 / span 1; }
+
+.grid__item--media {
+  background: hotPink;
+  grid-column: 11 / 14;
+  grid-row: 1 / span 2; }
+
 html,
 body {
   color: #333;

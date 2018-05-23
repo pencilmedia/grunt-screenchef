@@ -32,6 +32,21 @@
                     <div class="css-grid--col">4</div>
                 </div>
             </section>
+            <section>
+                <div class="wrapper">
+                    <div class="grid">
+                        <div class="grid__item grid__item--heading">
+                            <h2>Heading</h2>
+                        </div>
+                        <div class="grid__item grid__item--media">
+                        </div>
+                        <div class="grid__item grid__item--body">
+                            <h3>Subheading</h3>
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </article> 
         <?php include("inc/foot.inc.php"); ?>   
     </main> 
