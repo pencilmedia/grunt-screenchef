@@ -1,8 +1,8 @@
 <?php
 // SETTING THE ROOT VARIABLE WE CAN USE IT TO CREATE RELATIVE PATHS
-    include("config.inc");
-    $ROOT = '/'; // Set root for relative paths
-    $thisPage="no"; 
+    include("../config.inc");
+    $ROOT = '../'; // Set root for relative paths
+    $thisPage="holy-grail-grid"; 
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -11,7 +11,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
     <title><?php echo hmpgTitle ?></title>
-    <?php include("inc/head.inc.php"); ?>
+    <?php include("../inc/head.inc.php"); ?>
     </head>
     <body>
         <div class="hg">

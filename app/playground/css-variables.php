@@ -1,8 +1,8 @@
 <?php
 // SETTING THE ROOT VARIABLE WE CAN USE IT TO CREATE RELATIVE PATHS
-    include("config.inc");
-    $ROOT = '/'; // Set root for relative paths
-    $thisPage="home"; 
+    include("../config.inc");
+    $ROOT = '../'; // Set root for relative paths
+    $thisPage="css-variables"; 
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -11,7 +11,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
 <title><?php echo hmpgTitle ?></title>
-<?php include("inc/head.inc.php"); ?>
+<?php include("../inc/head.inc.php"); ?>
 <style>
     article section {
         margin: 0 15%;
@@ -31,23 +31,19 @@
     }
 </style>
 </head>
-<body class="hmpg">
-    <!--[if lt IE 7]>
+    <body class="second-level">
+        <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <main>
-    <?php //include("inc/nav.inc.php"); ?>
-        <article>
-            <h1>Explorations</h1>
-            <p>Playground for experiments.</p>
-            <section>
+        <main class="chef-grid">
+            <?php include("../inc/nav.inc.php"); ?>
+            <section class="chef-grid--content">
                 <h2>CSS Variables</h2>
                 <p>
                     If your browser supports CSS variables, this text will be blue, otherwise it will be red.
                 </p>
             </section>
-        </article> 
-        <?php include("inc/foot.inc.php"); ?>   
-    </main> 
-</body>
+            <?php include("../inc/foot.inc.php"); ?>
+        </main>
+    </body>
 </html>

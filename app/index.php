@@ -11,40 +11,18 @@
     <!--[if gt IE 8]><!-->
     <html class="no-js">
     <!--<![endif]-->
-
     <head>
         <title>
             <?php echo hmpgTitle ?>
         </title>
         <?php include("inc/head.inc.php"); ?>
     </head>
-
     <body class="hmpg">
         <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
         <main class="chef-grid">
-            <?php // include("inc/nav.inc.php"); ?>
-            <header class="chef-grid--header "> 
-            <!-- animated zoomInUp -->
-                <hgroup>
-                    <h1>
-                        <a href="<?php echo $ROOT ?>">Ralph Adrian Garcia</a>
-                    </h1>
-                    <h2>Interaction Designer and Prototyper</h2>
-                    <p>
-                        <?php echo (string)$yearsExperience->y; ?> years in user experience and interaction design.
-                    </p>
-                </hgroup>
-                <nav class="main-nav">
-                    <ul>
-                            <li><a <?php echo 'href="' . $ROOT . '"'; if ($thisPage=="home") echo " class=\"active\""; ?> >home</a></li>
-                            <li><a <?php echo 'href="' . $ROOT . 'portfolio/"'; if ($thisPage=="portfolio") echo " class=\"active\""; ?> >portfolio</a></li>
-                            <li><a <?php echo 'href="' . $ROOT . 'about/"'; if ($thisPage=="about") echo " class=\"active\""; ?> >about</a></li>
-                    </ul>
-                </nav>
-            </header>
-        
+            <?php include("inc/nav.inc.php"); ?>
             <section class="chef-grid--content">
 
                 <article class="chef-gridxx">
@@ -76,12 +54,7 @@
                     </section>
                 </article>
             </section>
-            <?php // include("inc/foot.inc.php"); ?>
-            <footer class="chef-grid--footer">
-                <ul>
-                    <li>&copy;<?php echo date("Y"); ?> Ralph Adrian Garcia</li>
-                </ul>
-            </footer>
+            <?php include("inc/foot.inc.php"); ?>
         </main>
     </body>
 
