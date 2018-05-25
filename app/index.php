@@ -4,50 +4,85 @@
     $ROOT = '/'; // Set root for relative paths
     $thisPage="home"; 
 ?>
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-<title><?php echo hmpgTitle ?></title>
-<?php include("inc/head.inc.php"); ?>
-</head>
-<body class="hmpg">
-    <!--[if lt IE 7]>
+    <!DOCTYPE html>
+    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <html class="no-js">
+    <!--<![endif]-->
+
+    <head>
+        <title>
+            <?php echo hmpgTitle ?>
+        </title>
+        <?php include("inc/head.inc.php"); ?>
+    </head>
+
+    <body class="hmpg">
+        <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <main>
-    <?php //include("inc/nav.inc.php"); ?>
-        <article>
-            <section>
-                <h1>Screenchef</h1>
-                <h2>Color Palette</h2>
-                <h6>Black</h6>
-                <div class="box-color black"></div>
-                <div class="box-color black-light"></div>
-                <div class="box-color black-lighter"></div>
-                <div class="box-color black-lightest"></div>
-                <h6>Grey</h6>
-                <div class="box-color grey-darkest"></div>
-                <div class="box-color grey-darker"></div>
-                <div class="box-color grey-dark"></div>
-                <div class="box-color grey"></div>
-                <div class="box-color grey-light"></div>
-                <div class="box-color grey-lighter"></div>
-                <div class="box-color grey-lightest"></div>
+        <main class="chef-grid">
+            <?php // include("inc/nav.inc.php"); ?>
+            <header class="chef-grid--header "> 
+            <!-- animated zoomInUp -->
+                <hgroup>
+                    <h1>
+                        <a href="<?php echo $ROOT ?>">Ralph Adrian Garcia</a>
+                    </h1>
+                    <h2>Interaction Designer and Prototyper</h2>
+                    <p>
+                        <?php echo (string)$yearsExperience->y; ?> years in user experience and interaction design.
+                    </p>
+                </hgroup>
+                <nav class="main-nav">
+                    <ul>
+                            <li><a <?php echo 'href="' . $ROOT . '"'; if ($thisPage=="home") echo " class=\"active\""; ?> >home</a></li>
+                            <li><a <?php echo 'href="' . $ROOT . 'portfolio/"'; if ($thisPage=="portfolio") echo " class=\"active\""; ?> >portfolio</a></li>
+                            <li><a <?php echo 'href="' . $ROOT . 'about/"'; if ($thisPage=="about") echo " class=\"active\""; ?> >about</a></li>
+                    </ul>
+                </nav>
+            </header>
+        
+            <section class="chef-grid--content">
+
+                <article class="chef-gridxx">
+                    <section class="chef-gridxx">
+                        
+                        <h2>Color Palette</h2>
+                        <h6>Black</h6>
+                        <div class="box-color black"></div>
+                        <div class="box-color black-light"></div>
+                        <div class="box-color black-lighter"></div>
+                        <div class="box-color black-lightest"></div>
+                        <h6>Grey</h6>
+                        <div class="box-color grey-darkest"></div>
+                        <div class="box-color grey-darker"></div>
+                        <div class="box-color grey-dark"></div>
+                        <div class="box-color grey"></div>
+                        <div class="box-color grey-light"></div>
+                        <div class="box-color grey-lighter"></div>
+                        <div class="box-color grey-lightest"></div>
+                    </section>
+                    <section class="chef-gridxx">
+                        <h2>Playground</h2>
+                        <p>
+                            <a href="playground/css-variables.php">CSS Variables</a>
+                        </p>
+                        <p>
+                            <a href="playground/css-grid.php">CSS Grid</a>
+                        </p>
+                    </section>
+                </article>
             </section>
-            <section>
-                <h2>Exploration</h2>
-                <p>
-                    <a href="css-variables.php">CSS Variables</a>
-                </p>
-                <p>
-                    <a href="css-grid.php">CSS Grid</a>
-                </p>
-            </section>
-        </article> 
-        <?php include("inc/foot.inc.php"); ?>   
-    </main> 
-</body>
-</html>
+            <?php // include("inc/foot.inc.php"); ?>
+            <footer class="chef-grid--footer">
+                <ul>
+                    <li>&copy;<?php echo date("Y"); ?> Ralph Adrian Garcia</li>
+                </ul>
+            </footer>
+        </main>
+    </body>
+
+    </html>

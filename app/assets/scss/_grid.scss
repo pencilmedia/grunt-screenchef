@@ -55,11 +55,11 @@
 
 // Holy Grail Grid
 .hg__header {
-     grid-area: header;
+     grid-area: hg_header;
 }
 
-.hg__footer {
-     grid-area: footer;
+.hg__hg_footer {
+     grid-area: hg_footer;
 }
 
 .hg__main {
@@ -67,7 +67,7 @@
 }
 
 .hg__left {
-     grid-area: navigation;
+     grid-area: hg_navigation;
 }
 
 .hg__right {
@@ -79,7 +79,7 @@
          outline: 1px solid red;
     }
      display: grid;
-     grid-template-areas: "header header header" "navigation main ads" "footer footer footer";
+     grid-template-areas: "hg_header hg_header hg_header" "hg_navigation main ads" "hg_footer hg_footer hg_footer";
      grid-template-columns: 150px 1fr 150px;
      grid-template-rows: 100px 1fr 30px;
      min-height: 100vh;
@@ -87,7 +87,7 @@
 
 @media screen and (max-width: 600px) {
      .hg {
-          grid-template-areas: "header" "navigation" "main" "ads" "footer";
+          grid-template-areas: "hg_header" "hg_navigation" "main" "ads" "hg_footer";
           grid-template-columns: 100%;
           grid-template-rows: 100px 50px 1fr 50px 30px;
      }
