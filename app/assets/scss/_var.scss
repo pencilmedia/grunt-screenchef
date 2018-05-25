@@ -7,21 +7,21 @@
 // Colors
 // -------------------------------------------------- //
 
-$black: 			#000;
+$black: 				#000;
 $charcoal: 			#333;
-$white: 			#fff;
+$white: 				#fff;
 $blue: 				#0080FF;
-$blueBright: 		#37f;
+$blueBright: 			#37f;
 $red: 				#900;
 $brown:				#432;
 
-$gray: #ccc;
-$grayLight: lighten($gray, 5%);
-$grayLighter: lighten($gray, 10%);
-$grayLightest: lighten($gray, 15%);
-$grayDark: darken($gray, 15%);
-$grayDarker: darken($gray, 30%);
-$grayDarkest: darken($gray, 45%);
+$gray:			   #ccc;
+$grayLight:			lighten($gray, 5%);
+$grayLighter:			lighten($gray, 10%);
+$grayLightest:			lighten($gray, 15%);
+$grayDark:			darken($gray, 15%);
+$grayDarker:			darken($gray, 30%);
+$grayDarkest:			darken($gray, 45%);
 
 // Blues
 $blue:                  #043F90;
@@ -34,7 +34,7 @@ $blueDarkest:           darken($blue, 8%);
 
 // Accent colors
 $blueAccent:            #98B3CD;
-$blueHighlight:		#7EA3B8;
+$blueHighlight:	    #7EA3B8;
 $navHighlight:			lighten($blueHighlight,25%);
 $blueHover:			#ECF2F7;
 $navyBlue:          	darken($blue, 60%);

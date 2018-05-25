@@ -11,7 +11,7 @@
 
 // Grid
 .css-grid {
-     border: 1px solid red;
+     outline: 1px solid red;
      margin-bottom: 40px;
      background: $white;
      * {
@@ -22,7 +22,7 @@
      grid-template-rows: minmax(100%, 100%);
      grid-gap: var(--gutter); // padding: var(--gutter);
      width: 100vw;
-     height: 100vh;
+     min-height: 300px;
      &.css-grid--col-3 {
           grid-template-columns: var(--col) var(--col) var(--col);
      }

@@ -131,7 +131,7 @@ h6 {
     --gutter: 10px; } }
 
 .css-grid {
-  border: 1px solid red;
+  outline: 1px solid red;
   margin-bottom: 40px;
   background: #fff;
   display: grid;
@@ -139,7 +139,7 @@ h6 {
   grid-template-rows: minmax(100%, 100%);
   grid-gap: var(--gutter);
   width: 100vw;
-  height: 100vh; }
+  min-height: 300px; }
   .css-grid * {
     border: 1px solid red; }
   .css-grid.css-grid--col-3 {
@@ -210,8 +210,6 @@ h6 {
       grid-area: b;
       align-self: end;
       justify-self: end; }
-  .chef-grid .chef-grid--content {
-    margin: 20px; }
 
 @media screen and (max-width: 600px) {
   .chef-grid .chef-grid--header {
