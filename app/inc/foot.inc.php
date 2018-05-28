@@ -1,4 +1,4 @@
-<footer>
+<footer class="chef-grid--footer">
     <ul>
         <li>&copy; <?php echo date("Y"); ?> Ralph Adrian Garcia</li>
     </ul>

@@ -195,9 +195,10 @@ h6 {
 // -----------------------------------------------------*/
 .chef-grid {
   display: grid;
-  grid-template-rows: 120px 4fr 45px;
+  grid-template-rows: min-content 4fr 45px;
   min-height: 100vh; }
   .chef-grid .chef-grid--header {
+    border: 1px solid blue;
     display: grid;
     grid-template-areas: "a b";
     grid-template-columns: 1fr 1fr;
@@ -210,12 +211,27 @@ h6 {
       grid-area: b;
       align-self: end;
       justify-self: end; }
+  .chef-grid .chef-grid--content {
+    border: 1px solid blue; }
+  .chef-grid .chef-grid--footer {
+    border: 1px solid blue; }
 
 @media screen and (max-width: 600px) {
   .chef-grid .chef-grid--header {
     grid-template-areas: "a" "b";
     grid-template-columns: 100%;
-    grid-template-rows: 2fr 1fr; } }
+    grid-template-rows: 2fr 1fr; }
+    .chef-grid .chef-grid--header hgroup {
+      margin: 0 20px; }
+    .chef-grid .chef-grid--header nav {
+      margin: 0 20px;
+      justify-self: center;
+      width: 100%; }
+      .chef-grid .chef-grid--header nav ul {
+        border: 1px solid green;
+        margin: 0 20px;
+        display: flex;
+        justify-content: space-around; } }
 
 /* BEGIN: nav.scss
 // -----------------------------------------------------*/
