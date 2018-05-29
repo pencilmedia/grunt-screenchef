@@ -3,6 +3,7 @@
 
 header {
     position: relative;
+    padding: 2em 0;
     hgroup {
         h1 {
             margin: 0;
@@ -29,11 +30,14 @@ header {
                 display: inline-block;
                 margin-bottom: 0;
                 a {
-                    border-bottom: none;
+                    border-bottom: 3px solid transparent;
                     display: inline-block;
                     padding: 5px 15px;
                     text-transform: capitalize;
                     text-shadow: 0 1px #fff;
+                    &:hover {
+                        border-bottom-color: $purple;
+                    }
                     &.active {
                         color: $purple;
                         font-weight: bold;

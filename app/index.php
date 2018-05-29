@@ -24,10 +24,8 @@
         <main class="chef-grid">
             <?php include("inc/nav.inc.php"); ?>
             <section class="chef-grid--content">
-
-                <article class="chef-gridxx">
-                    <section class="chef-gridxx">
-                        
+                <article>
+                    <section>
                         <h2>Color Palette</h2>
                         <h6>Black</h6>
                         <div class="box-color black"></div>
@@ -43,7 +41,7 @@
                         <div class="box-color grey-lighter"></div>
                         <div class="box-color grey-lightest"></div>
                     </section>
-                    <section class="chef-gridxx">
+                    <section>
                         <h2>Playground</h2>
                         <p>
                             <a href="playground/css-variables.php">CSS Variables</a>
@@ -57,5 +55,4 @@
             <?php include("inc/foot.inc.php"); ?>
         </main>
     </body>
-
-    </html>
+</html>

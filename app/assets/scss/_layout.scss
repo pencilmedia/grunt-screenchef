@@ -3,14 +3,13 @@
 
 .chef-grid {
     display: grid;
-    grid-template-rows: min-content 4fr 45px;
+    grid-template-rows: auto 4fr 45px;
     min-height: 100vh;
     .chef-grid--header {
-        border: 1px solid blue;
+        // outline: 1px solid blue;
         hgroup {
             grid-area: a;
             align-self: end;
-            margin-left: 20px;
         }
         nav {
             grid-area: b;
@@ -23,10 +22,10 @@
         grid-template-rows: 1fr;
     }
     .chef-grid--content {
-        border: 1px solid blue;
+        // outline: 1px solid blue;
     }
     .chef-grid--footer {
-        border: 1px solid blue;
+        // outline: 1px solid blue;
     }
 }
 

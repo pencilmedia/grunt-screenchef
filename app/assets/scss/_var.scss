@@ -1,67 +1,6 @@
 /* BEGIN: _var.scss
 // -----------------------------------------------------*/
-
-/* BEGIN: variables.scss - for theme.scss
-// -----------------------------------------------------*/
-
-// Colors
-// -------------------------------------------------- //
-
-$black: 				#000;
-$charcoal: 			#333;
-$white: 				#fff;
-$blue: 				#0080FF;
-$blueBright: 			#37f;
-$red: 				#900;
-$brown:				#432;
-
-$gray:			   #ccc;
-$grayLight:			lighten($gray, 5%);
-$grayLighter:			lighten($gray, 10%);
-$grayLightest:			lighten($gray, 15%);
-$grayDark:			darken($gray, 15%);
-$grayDarker:			darken($gray, 30%);
-$grayDarkest:			darken($gray, 45%);
-
-// Blues
-$blue:                  #043F90;
-$blueLight:             lighten($blue, 20%);
-$blueLighter:           lighten($blue, 40%);
-$blueLightest:          lighten($blue, 60%);
-$blueDark:              darken($blue, 2%);
-$blueDarker:            darken($blue, 4%);
-$blueDarkest:           darken($blue, 8%);
-
-// Accent colors
-$blueAccent:            #98B3CD;
-$blueHighlight:	    #7EA3B8;
-$navHighlight:			lighten($blueHighlight,25%);
-$blueHover:			#ECF2F7;
-$navyBlue:          	darken($blue, 60%);
-
-// Error colors
-$red:                   #ba2b36;
-$redLight:			lighten($red, 30%);
-$redLighter:			lighten($red, 40%);
-$redLightest:			lighten($red, 50%);
-
-$green:                 #74ae42;
-$greenLight:            lighten($green, 5%);
-$greenLighter:          lighten($green, 10%);
-$greenLightest:         lighten($green, 15%);
-$greenDark:             darken($green, 5%);
-$greenDarker:           darken($green, 15%);
-$greenDarkest:          darken($green, 30%);
-
-$yellow:                #EFB73E;
-$orange:                #f96;
-$schoolbusYellow:	    #FEC200;
-$darkOrange:            darken(#f96, 40%);
-$pink:                  #c3325f;
-$purple:                #986FB1;
-
-$bodyBackground:        #f9f9f9;
-
+@import 'color-palette';
 
 // Typography
 // -----------------------------------------------------
@@ -72,9 +11,9 @@ $baseLineHeight:        28px;
 $fontFamilyLight:	    "Helvetica Neue Light", Helvetica, Arial, sans-serif;
 
 // Custom Web Fonts
-$titleFont:  "Inconsolata";
-$titleFontBold:  "InconsolataBold";
-$titleFontLight:  "InconsolataLight";
+$titleFont:  "GothamPro";
+$titleFontBold:  "GothamProBold";
+$titleFontLight:  "GothamProLight";
 
 //** Background color for `<body>`.
 $bodyBG:               $white;
@@ -91,12 +30,13 @@ $linkHoverDecoration: underline;
 
 // Forms
 // -----------------------------------------------------
-$placeholderText: 					#a9a9a9;
-$input-height-base: 34px;
+$placeholderText: 			#a9a9a9;
+$input-height-base: 		34px;
 
 
 // Common
 // -----------------------------------------------------
+$copyColor: 				$charcoal;
 $pageMargin: 				20px;
 $borderColor:				#ddd;
 
@@ -108,7 +48,7 @@ $navbarHeight: 			45px;
 
 // Margins & Padding
 // -------------------------------------------------- //
-$pageMargin: 20px;
+$pageMargin: 				20px;
 
 
 
@@ -128,39 +68,8 @@ $screen-md-min:              992px;
 $screen-lg-min:              1200px;
 
 
-
-
-
-/* COLORS */
-$greyBase:      	#ccc;
-$greyLightest:  	lighten($greyBase, 15%);
-$greyLighter:   	lighten($greyBase, 10%);
-$greyLight:     	lighten($greyBase, 5%);
-$grey:          	$greyBase;
-$greyDark:  		darken($greyBase, 5%);
-$greyDarker:  		darken($greyBase, 10%);
-$greyDarkest:  	darken($greyBase, 20%);
-
-$blackBase:      	#000;
-$blackLightest:  	lighten($blackBase, 90%);
-$blackLighter:   	lighten($blackBase, 60%);
-$blackLight:     	lighten($blackBase, 30%);
-$black:          	$blackBase;
-
-$white: 			#fff;
-
-/* Common */
-$copyColor: #333;
-$linkColor: rgb(192, 96, 0);
-
-
-/* Typography */
-$mainFont: 'Inconsolata', Helvetica, sans-serif;
-
 @mixin BodyCopy {
 	color: $copyColor;
-	font-family: $mainFont;
+	font-family: $baseFontFamily;
 	font-weight: normal;
 }
-
-$border--color: $greyLightest;

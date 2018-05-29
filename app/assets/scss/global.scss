@@ -5,6 +5,7 @@
 // -----------------------------------------------------
 @import 'var';
 @import 'mixins';
+@import 'common';
 @import 'animation';
 @import 'typography';
 @import 'grid';
@@ -22,6 +23,9 @@ body {
 }
 body {
     margin: 0;
+}
+main {
+    margin: 0 5%;
 }
 a {
     color: $linkColor;
