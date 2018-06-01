@@ -44,7 +44,23 @@
                         <p>xx</p>
                     </div>
                     <div class="css-grid--col">2</div>
-                    <div class="css-grid--col">3</div>
+                    <div class="css-grid--col">
+                        <div class="css-grid css-grid--col-1">
+                            <div class="css-grid--col">
+                              <h6>Nested Grid</h6>
+                            </div>
+                        </div>
+                        <div class="css-grid css-grid--col-2">
+                            <div class="css-grid--col">1b</div>
+                            <div class="css-grid--col">2b</div>
+                        </div>
+                        <div class="css-grid css-grid--col-3">
+                            <div class="css-grid--col">1c</div>
+                            <div class="css-grid--col">2c</div>
+                            <div class="css-grid--col">3c</div>
+                        </div>
+                    </div>
+                    </div>
                 </div>
             </section>
             <?php include("../inc/foot.inc.php"); ?>

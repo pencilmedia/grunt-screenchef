@@ -15,14 +15,20 @@
      margin-bottom: 40px;
      background: $white;
      * {
-          border: 1px solid red;
+          outline: 1px solid red;
      }
      display: grid;
      grid-template-columns: 1fr repeat(12, var(--col)) 1fr;
      grid-template-rows: minmax(100%, 100%);
      grid-gap: var(--gutter); // padding: var(--gutter);
-     width: 100vw;
+     width: 100%;
      min-height: 300px;
+     &.css-grid--col-1 {
+        grid-template-columns: 100%;
+     }
+     &.css-grid--col-2 {
+        grid-template-columns:  var(--col) var(--col);
+     }
      &.css-grid--col-3 {
           grid-template-columns: var(--col) var(--col) var(--col);
      }
