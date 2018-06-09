@@ -49,6 +49,18 @@
                         <p>
                             <a href="playground/css-grid.php">CSS Grid</a>
                         </p>
+                        <h5>Strikethrough</h5>
+                        <p>
+                            <span style="text-decoration: line-through">strike this out</span>
+                        </p>
+                        <p>line through whitespace
+                            <span style="text-decoration: line-through">&nbsp;&nbsp;&nbsp;</span>
+                        </p>
+                        <p>
+                        <span style='color:red;text-decoration:line-through'>
+                            <span style='color:black'>black with red strikethrough</span>
+                        </span>
+                        </p>
                     </section>
                 </article>
             </section>
