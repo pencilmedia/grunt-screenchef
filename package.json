@@ -16,6 +16,7 @@
   "author": "Ralph A. Garcia, screenchef.com",
   "license": "ISC",
   "dependencies": {
-    "grunt": "^1.0.2"
+    "grunt": "^1.0.2",
+    "jslint": "^0.12.0"
   }
 }
